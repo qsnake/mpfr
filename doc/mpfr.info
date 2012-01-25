@@ -2994,11 +2994,12 @@ against another MPFR version (older or newer), as described below.
 
    * `mpfr_urandom' and `mpfr_urandomb' changed in MPFR 3.1.  Their
      behavior no longer depends on the platform (assuming this is also
-     true for GMP's random generator).  As a consequence, the returned
-     values can be different between MPFR 3.1 and previous MPFR
-     versions.  Note: as the reproducibility of these functions was not
-     specified before MPFR 3.1, the MPFR 3.1 behavior is _not_ regarded
-     as backward incompatible with previous versions.
+     true for GMP's random generator, which is not the case between GMP
+     4.1 and 4.2 if `gmp_randinit_default' is used).  As a consequence,
+     the returned values can be different between MPFR 3.1 and previous
+     MPFR versions.  Note: as the reproducibility of these functions
+     was not specified before MPFR 3.1, the MPFR 3.1 behavior is _not_
+     regarded as backward incompatible with previous versions.
 
 
 
@@ -4239,13 +4240,13 @@ Node: API Compatibility127378
 Node: Type and Macro Changes129308
 Node: Added Functions132029
 Node: Changed Functions134972
-Node: Removed Functions139167
-Node: Other Changes139579
-Node: Contributors141108
-Node: References143574
-Node: GNU Free Documentation License145315
-Node: Concept Index167758
-Node: Function and Type Index173677
+Node: Removed Functions139253
+Node: Other Changes139665
+Node: Contributors141194
+Node: References143660
+Node: GNU Free Documentation License145401
+Node: Concept Index167844
+Node: Function and Type Index173763
 
 End Tag Table
 
